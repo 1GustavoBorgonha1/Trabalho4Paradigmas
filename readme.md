@@ -183,27 +183,7 @@ Singleton foi usado em Config para manter configurações globais.
 
 Pastas seguem recomendação do enunciado.
 
-⚠️ 8. Limitações e Próximos Passos
-Limitações
-
-Os valores de ajustes são estáticos (ex: +10%, -100).
-
-Não há persistência (banco de dados).
-
-CLI ainda é simples e não possui submenus.
-
-Melhorias sugeridas
-
-Gravar ativos em PostgreSQL
-
-Criar interface web
-
-Incluir padrão Observer para logs em tempo real
-
-Adicionar novos métodos de depreciação (ex.: acelerada, fiscal)
-
-🎓 9. Créditos
+🎓 8. Créditos
 
 Sistema desenvolvido para o Trabalho 04 — Design Patterns
 Aluno: Gustavo Borgonha
-Curso: [Seu curso aqui]
