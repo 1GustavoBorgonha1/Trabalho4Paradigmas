@@ -111,30 +111,51 @@ classDiagram
 
 🏛️ 3. Arquitetura e Organização das Pastas
 
-O projeto segue a estrutura recomendada no enunciado:
+O projeto segue a estrutura:
 
 /
 ├── app/
+
 │   └── menu.php
+
 ├── domain/
+
 │   └── Ativo.php
+
 ├── strategies/
+
 │   ├── DepreciacaoStrategy.php
+
 │   ├── LinearStrategy.php
+
 │   └── SomaDigitosStrategy.php
+
 ├── decorators/
+
 │   ├── DepreciacaoDecorator.php
+
 │   ├── ResidualDecorator.php
+
 │   └── ReavaliacaoDecorator.php
+
 ├── factory/
+
 │   ├── DepreciacaoFactory.php
+
 ├── infra/
+
 │   ├── Config.php (Singleton)
+
 │   └── Logger.php
+
 ├── tests/
+
 │   ├── StrategyTest.php
+
 │   ├── DecoratorTest.php
+
 │   └── FactoryTest.php
+
 └── README.md
 
 🧪 4. Testes Automatizados (PHPUnit)
@@ -162,14 +183,36 @@ Executável via:
 php app/menu.php
 
 🔧 6. Como Executar o Projeto
-Instalar dependências
-composer install
 
-Rodar o menu
-php app/menu.php
+Pré-requisitos
+Para rodar este projeto, você precisa ter instalado:
+* [PHP](https://www.php.net/downloads) (instalado nas variáveis de ambiente)
+* Ou um ambiente de servidor local como [XAMPP](https://www.apachefriends.org/pt_br/index.html)
 
-Rodar testes
-vendor/bin/phpunit --bootstrap vendor/autoload.php tests
+Passo a passo
+
+1. Clone o repositório:
+ 
+   git clone [https://github.com/1GustavoBorgonha1/Trabalho4Paradigmas.git](https://github.com/1GustavoBorgonha1/Trabalho4Paradigmas.git)
+
+Acesse a pasta do projeto:
+
+cd Trabalho4Paradigmas
+
+Execute o projeto:
+
+Método A (Via terminal - Recomendado): Inicie o servidor embutido do PHP com o comando:
+
+    php -S localhost:8000
+    Em seguida, abra o navegador em: http://localhost:8000
+
+Método B (Via XAMPP):
+
+Mova a pasta do projeto para o diretório htdocs do seu XAMPP.
+
+    Inicie o módulo Apache no painel do XAMPP.
+
+Acesse no navegador: http://localhost/Trabalho4Paradigmas
 
 🧠 7. Decisões de Design
 
